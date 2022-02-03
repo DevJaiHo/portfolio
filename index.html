@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dev Jai Ho</title>
-    <meta name="description" content="Jai Ho's very first portfolio website">
-    <meta name="author" content="Jai Ho">
-    <link rel="icon" href="img/favicon.png">
+    <meta name="description" content="Jai Ho's very first portfolio website" />
+    <meta name="author" content="Jai Ho" />
+    <link rel="icon" href="img/favicon.png" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,67 +24,30 @@
     <script src="main.js" defer></script>
   </head>
   <body>
-    <!-- main -->
-    <section id="main">
-      <!-- navbar -->
-      <nav>
-        <a href="#" class="logo">Jai Ho</a>
-        <!-- menu -->
-        <ul class="menu">
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skill">Skill</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <!-- language -->
-        <a href="#" class="lang">En</a>
-      </nav>
-      <!-- banner -->
-      <div id="banner">
-        <p>Hello</p>
-        <h1>I'm <font color="#FFC600">Jai Ho</font> Cho</h1>
-        <p class="details">
-          <a href="#" class="cv-btn">Hire Me!</a>
-        </p>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="navbar__name">
+        <a href="#">
+          <img src="img/favicon.png" alt="logo" /><span>Jai Ho</span>
+        </a>
       </div>
-      <!-- social -->
-      <div class="social">
-        <a href="https://github.com/DevJaiHo" target="_blank"
-          ><i class="fab fa-github"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/in/jai-ho-cho-72a584226/"
-          target="_blank"
-          ><i class="fab fa-linkedin"></i
-        ></a>
-        <a href="https://twitter.com/devjaihocho" target="_blank"
-          ><i class="fab fa-twitter"></i
-        ></a>
-      </div>
-    </section>
+      <ul class="navbar__menu">
+          <li class="navbar__menu__item">Home</li>
+          <li class="navbar__menu__item">About</li>
+          <li class="navbar__menu__item">Skills</li>
+          <li class="navbar__menu__item">Portfolio</li>
+          <li class="navbar__menu__item">Contact</li>
+      </ul>
+    </nav>
+    <!-- home -->
+    <section id="home"></section>
     <!-- about -->
-    <section id="about">
-      <div class="about-text">
-        <h1>About Me</h1>
-        <h2>Apprentice Frontend Developer</h2>
-        <p>
-          I am highly motivated and have a passion for creating and supporting
-          your products. I would love to work side by side with people of all
-          backgrounds. I can sit down all day and night to design, solve
-          problems, and apply solutions to intricate technical challenges.
-        </p>
-      </div>
-      <div class="about-model">
-        <img src="img/profile.jpg" alt="picture of Jai Ho" />
-      </div>
-    </section>
-    <!-- skill -->
-    <section id="skill">
-      <div class="heading">
-        <h1>Skills</h1>
-        <p>Here are some skills I have</p>
-      </div> 
-    </section>
+    <section id="about"></section>
+    <!-- skills -->
+    <section id="skills"></section>
+    <!-- portfolio -->
+    <section id="portfolio"></section>
+    <!-- contact -->
+    <section id="contact"></section>
   </body>
 </html>
