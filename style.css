@@ -22,7 +22,7 @@ li {
   justify-content: space-between;
   background-color: rgb(136, 165, 219);
   align-items: center;
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
 }
@@ -69,4 +69,44 @@ li {
   border-radius: 5px;
 }
 
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+}
 
+.home__thumbnail {
+  border-radius: 50%;
+  width: 100px;
+  height: 200px;
+  margin-top: 20px;
+}
+
+.home__title {
+  font-size: 50px;
+  font-family: "Poppins";
+  
+}
+
+.rainbow-text {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
+  color: transparent;
+}
+
+#home h1 {
+  margin: 0px;
+}
+
+.home__description {
+  font-family: "Poppins";
+  font-size: 18px;
+}
+
+.home__contact {
+  background-color: pink;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  border-radius: 10px;
+}
