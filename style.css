@@ -1,42 +1,49 @@
+:root {
+  /* color */
+  --color-yellow: #fae100;
+  --color-brown: #3c1d1e;
+  --color-lightblue: #b2c7d9;
+  --color-white: #ffffff;
+  --color-black: #0b0b0b;
+  /* font-family */
+  --font-poppins: "Poppins";
+  /* border-radius */
+  --border-radius: 5px;
+}
+
 body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  background-color: var(--color-lightblue);
 }
 
 a {
   text-decoration: none;
-  color: black;
 }
 
 li {
   list-style: none;
 }
 
-#home img {
-  width: 300px;
-}
-
 .navbar {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(136, 165, 219);
+  background-color: var(--color-yellow);
   align-items: center;
   position: sticky;
   top: 0;
   width: 100%;
 }
 
-.navbar__name a img {
-  width: 30px;
-  padding-right: 10px;
-  box-sizing: content-box;
+.navbar__name i {
+  color: var(--color-brown);
 }
 
 .navbar__name {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 600;
-  font-family: "Poppins";
+  font-family: var(--font-poppins);
 }
 
 .navbar__name img {
@@ -44,69 +51,28 @@ li {
 }
 
 .navbar__name span {
-  color: white; 
+  color: var(--color-brown);
 }
 
 .navbar__menu {
   display: flex;
 }
 
-
 .navbar__menu__item {
   padding: 0 30px;
-  color: whitesmoke;
+  color: var(--color-brown);
   font-size: 15px;
-  font-family: "Poppins";
+  font-family: var(--font-poppins);
 }
 
 .navbar__menu__item:hover {
   border: 2px whitesmoke solid;
   border-radius: 5px;
+  background-color: var(--color-white);
 }
 
 .active {
-  border: 2px whitesmoke solid;
+  border: 2px var(--color-white) solid;
   border-radius: 5px;
-}
-
-#home {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  justify-content: center;
-  align-items: center;
-}
-
-.home__thumbnail {
-  border-radius: 50%;
-  width: 100px;
-  height: 200px;
-  margin-top: 20px;
-}
-
-.home__title {
-  font-size: 50px;
-  font-family: "Poppins";
-  
-}
-
-.rainbow-text {
-  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
-  color: transparent;
-}
-
-#home h1 {
-  margin: 0px;
-}
-
-.home__description {
-  font-family: "Poppins";
-  font-size: 18px;
-}
-
-.home__contact {
-  background-color: pink;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 30px;
-  border-radius: 10px;
+  background-color: var(--color-white);
 }
