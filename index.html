@@ -25,27 +25,29 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar">
-      <div class="navbar__name">
+    <nav id="navbar">
+      <div class="navbar__logo">
         <a href="#home">
-          <i class="fas fa-robot"></i>
-          <a href="#">Jai Ho</a>
+          <i class="fas fa-robot"> Jai Ho</i>
         </a>
       </div>
       <ul class="navbar__menu">
-        <a href="#home"> <li class="navbar__menu__item active">Home</li> </a
-        ><a href="#about"> <li class="navbar__menu__item">About</li> </a
-        ><a href="#skills"> <li class="navbar__menu__item">Skills</li> </a
-        ><a href="#portfolio"> <li class="navbar__menu__item">Portfolio</li> </a
-        ><a href="#contact">
-          <li class="navbar__menu__item">Contact</li>
-        </a>
+        <li class="navbar__menu__item active">Home</li> 
+        <li class="navbar__menu__item">About</li> 
+        <li class="navbar__menu__item">Skills</li> 
+        <li class="navbar__menu__item">Portfolio</li> 
+        <li class="navbar__menu__item">Contact</li>
       </ul>
+
+      <!-- toggle -->
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
     </nav>
     <!-- home -->
     <section id="home">
-      <div class="home__banner">
-        <img class="profile" src="img/profile.jpg" alt="picture of Jai Ho" />
+      <div class="home__container">
+        <img class="home__picture" src="img/profile.jpg" alt="picture of Jai Ho" />
         <h1>Jai Ho Cho</h1>
         <p>
           Hello there, I am a selftaught frontend developer based in South
@@ -56,50 +58,53 @@
     </section>
     <!-- about -->
     <section id="about">
-      <div class="about__profile">
-        <img src="img/about.jpg" alt="" />
-        <div class="about__description bubble__left">
-          <p>
-            I have been teaching myself how to design and develop a web app for
-            three months. I believe in consistency and dedication, so I try to
-            code at least a few lines every day. I can't wait to collaborate
-            with people with similar interests and goals. I can sit down all day
-            and night to design, solve problems, and apply solutions to complex
-            technical challenges.
-          </p>
+      <div class="about__container">
+          <img src="img/about.jpg" alt="two dogs and a woman" class="about__picture" />
+          <div class="about__description">
+            <h1>About Me</h1>
+            <p>
+              I have been teaching myself how to design and develop a web app
+              for three months. I believe in consistency and dedication, so I
+              try to code at least a few lines every day. I can't wait to
+              collaborate with people with similar interests and goals. I can
+              sit down all day and night to design, solve problems, and apply
+              solutions to complex technical challenges.
+            </p>
+          </div>
         </div>
       </div>
     </section>
     <!-- skills -->
     <section id="skills">
-      <div class="skills__description bubble__right">
-        <p>These are skills I have:</p>
-        <ul>
-          <i class="fab fa-html5 skills__icon"></i>
-          <li>HTML5</li>
-          <i class="fab fa-css3-alt skills__icon"></i>
-          <li>CSS3</li>
-          <i class="fab fa-js skills__icon"></i>
-          <li>Javascript</li>
-        </ul>
-        <p>And These are skills that I wish to learn:</p>
-        <ul>
-          <i class="fab fa-node skills__icon"></i>
-          <li>Node.js</li>
-          <i class="fab fa-react skills__icon"></i>
-          <li>React</li>
-          <i class="fas fa-database skills__icon"></i>
-          <li>Mongo DB</li>
-        </ul>
-      </div>
-
-      <img src="img/skills.jpg" alt="" class="skills__profile" />
+      <div class="skills__container">
+        <div class="skills__description">
+          <p>These are skills I have:</p>
+          <ul>
+            <i class="fab fa-html5 skills__icon"></i>
+            <li>HTML5</li>
+            <i class="fab fa-css3-alt skills__icon"></i>
+            <li>CSS3</li>
+            <i class="fab fa-js skills__icon"></i>
+            <li>Javascript</li>
+          </ul>
+          <p>And These are skills that I wish to learn:</p>
+          <ul>
+            <i class="fab fa-node skills__icon"></i>
+            <li>Node.js</li>
+            <i class="fab fa-react skills__icon"></i>
+            <li>React</li>
+            <i class="fas fa-database skills__icon"></i>
+            <li>Mongo DB</li>
+          </ul>
+        </div>
+      <img src="img/skills.jpg" alt="" class="skills__picture" />
+      </div> 
     </section>
     <!-- portfolio -->
     <section id="portfolio">
-      <div class="portfolio__banner">
-        <img src="img/portfolio.jpg" alt="" class="portfolio__pic" />
-        <div class="portfolio__description bubble__left">
+      <div class="portfolio__container">
+        <img src="img/portfolio.jpg" alt="" class="portfolio__picture" />
+        <div class="portfolio__description">
           <h1 class="portfolio__title">Portfolio</h1>
           <p>Soon to be updated...</p>
         </div>
@@ -109,10 +114,20 @@
     <section id="contact">
       <div class="contact__bar">
         <div class="contact__bar__menu">
-          <a href="https://www.linkedin.com/in/jai-ho-cho-72a584226/" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/DevJaiHo" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://twitter.com/devjaihocho" target="_blank"><i class="fab fa-twitter"></i></a>
-          <a href="mailto:choeco2020@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+          <a
+            href="https://www.linkedin.com/in/jai-ho-cho-72a584226/"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/DevJaiHo" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://twitter.com/devjaihocho" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="mailto:choeco2020@gmail.com" target="_blank"
+            ><i class="fas fa-envelope"></i
+          ></a>
         </div>
       </div>
       <p>2022 Jai Ho - All rights reserved</p>
