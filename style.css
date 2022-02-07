@@ -245,3 +245,15 @@ button {
   margin-top: 10px;
   margin-right: 10px;
 }
+
+
+.skills__icon {
+  color: var(--color-yellow);
+  transition: all 300ms ease;
+}
+
+.skills__icon:hover {
+  color: var(--color-brown);
+  transform: rotate(30deg) scale(1.1);
+  display: block;
+}
