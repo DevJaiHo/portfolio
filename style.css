@@ -71,7 +71,7 @@ button {
 .bubble__right {
   position: relative;
   width: 750px;
-  height: 300px;
+  height: 400px;
   padding: 40px;
   background: #ffffff;
   -webkit-border-radius: 10px;
@@ -210,7 +210,8 @@ button {
 .about__description {
   margin-left: 25px;
   font-size: 16px;
-  font-family: var(--font-poppins);;
+  font-family: var(--font-poppins);
+  position: relative;
 }
 
 #skills {
@@ -223,7 +224,7 @@ button {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  margin-left: 20px;
+  margin: 0 20px;
 }
 
 .skills__description {
@@ -233,6 +234,7 @@ button {
 .skills__description p {
   font-size: 20px;
   font-family: var(--font-poppins);
+  position: relative;
 }
 
 .skills__description ul {
@@ -256,4 +258,21 @@ button {
   color: var(--color-brown);
   transform: rotate(30deg) scale(1.1);
   display: block;
+}
+
+/* portfolio */
+.portfolio__banner {
+  display: flex;
+  margin-top: 50px;
+}
+
+.portfolio__pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.portfolio__description {
+  margin-left: 20px;
 }
