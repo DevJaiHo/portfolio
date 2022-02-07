@@ -257,7 +257,6 @@ button {
 .skills__icon:hover {
   color: var(--color-brown);
   transform: rotate(30deg) scale(1.1);
-  display: block;
 }
 
 /* portfolio */
@@ -275,4 +274,33 @@ button {
 
 .portfolio__description {
   margin-left: 20px;
+}
+
+/* contact */
+#contact {
+  background-color: var(--color-white);
+}
+
+.contact__bar {
+  margin-top: 50px;
+  background-color: darkgrey;
+  padding: 10px;
+}
+
+.contact__bar__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+}
+
+.contact__bar__menu i:hover {
+  color: var(--color-yellow);
+  transition: all 300ms ease;
+  transform: scale(1.5);
+}
+
+#contact p {
+  text-align: center;
+  
 }
