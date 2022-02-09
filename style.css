@@ -70,6 +70,7 @@ button {
   color: var(--color-brown);
   font-size: 15px;
   font-family: var(--font-poppins);
+  cursor: pointer;
 }
 
 .navbar__menu__item:hover {
