@@ -297,6 +297,10 @@ button {
     width: 100%;
     display: none;
   }
+
+  .navbar__menu.open {
+    display: block;
+  }
   .about__container {
     flex-direction: column;
   }

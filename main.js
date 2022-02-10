@@ -8,7 +8,13 @@ navbarMenu.addEventListener('click', (event) => {
     if (link == null) {
         return; 
     }
-    console.log(event.target.dataset.link);
+    navbarMenu.classList.remove('open')
     const scrollTo = document.querySelector(link);
     scrollTo.scrollIntoView({behavior: 'smooth'});
+})
+
+// Navbar toggle btn for mobile view
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', (event) => {
+    navbarMenu.classList.toggle('open');
 })
