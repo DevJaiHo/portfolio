@@ -79,11 +79,7 @@ button {
   background-color: var(--color-white);
 }
 
-.active {
-  border: 2px var(--color-white) solid;
-  border-radius: 5px;
-  background-color: var(--color-white);
-}
+
 
 .navbar__toggle-btn {
   position: absolute;
